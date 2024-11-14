@@ -1,0 +1,14 @@
+FROM EEVE-Korean-Instruct-10.8B-v1.0-Q5_K_M.gguf
+
+TEMPLATE """{{- if .System }}
+<s>{{ .System }}</s>
+{{- end }}
+<s>Human:
+{{ .Prompt }}</s>
+<s>Assistant:
+"""
+
+SYSTEM """You are a chatbot that announcement about Anyang University undergraduate announcements. You must generate answers in Korean."""
+
+PARAMETER stop <s>
+PARAMETER stop </s>
