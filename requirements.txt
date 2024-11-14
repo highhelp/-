@@ -1,0 +1,11 @@
+ollama
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+jupyter
+gtts
+openai-whisper
+SpeechRecognition
+
+
